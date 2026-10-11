@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проверки — Методичка ОСБ</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="../index.html">ОСБ — Методическое пособие</a>
+  <div class="nav-sections">
+    <button class="nav-dropdown-btn" onclick="toggleNavDropdown()">Разделы ▾</button>
+    <div class="nav-dropdown" id="navDropdown">
+      <a href="../pages/polnomochiya.html" data-page="polnomochiya">⚖️ Полномочия ОСБ</a>
+      <a href="../pages/proverki.html" data-page="proverki">🔍 Проверки</a>
+      <a href="../pages/raporty.html" data-page="raporty">📝 Написание рапортов</a>
+      <a href="../pages/opros.html" data-page="opros">🗣️ Опрос</a>
+      <a href="../pages/nadzor.html" data-page="nadzor">🛡️ Надзорная деятельность</a>
+      <a href="../pages/vzyskaniya.html" data-page="vzyskaniya">📋 Меры взыскания</a>
+      <a href="../pages/dejstviya.html" data-page="dejstviya">🚨 Действия при нарушении</a>
+      <a href="../pages/vyyavlenie-vnedrennyh.html" data-page="vyyavlenie-vnedrennyh">🕵️ Выявление внедрённых сотрудников</a>
+      <a href="../pages/normativy.html" data-page="normativy">📜 Нормативные документы</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="page-header">
+    <nav class="breadcrumb">
+      <a href="../index.html">← На главную</a>
+      <span class="sep">/</span>
+      <span class="current">Проверки</span>
+    </nav>
+    <h1>Проверки</h1>
+  </div>
+
+  <h2 class="section-label">Порядок проведения проверок</h2>
+
+  <div class="steps">
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <strong>Собрать доказательную базу</strong>
+        <p>Собрать материалы дела (доказательную базу) в отношении сотрудника ГАИ либо структурного подразделения: видеозаписи, документы, свидетельские показания и иные материалы.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <strong>Передать материалы руководству ОСБ</strong>
+        <p>Собранные материалы дела передаются непосредственному руководству Отдела собственной безопасности для рассмотрения и принятия решения о дальнейших действиях.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <strong>Начальство ОСБ передаёт материалы в ГУ МВД</strong>
+        <p>Начальство ОСБ направляет материалы напрямую начальнику Главного Управления МВД для получения санкции на проведение служебной проверки.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <strong>Создание приказа и начало проверки</strong>
+        <p>После одобрения начальником ГУ МВД создаётся приказ о проведении служебной проверки в отношении сотрудника или отдела. В ходе проверки проводится <a href="opros.html">опрос</a>, применяются <a href="vzyskaniya.html">меры дисциплинарного воздействия</a> и иные установленные процедуры.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>Методическое пособие ОСБ. Автор: Vladislav_Shetkov &nbsp;|&nbsp; Одобрил: Danila_Leonov</p>
+</footer>
+
+
+<script>
+function toggleNavDropdown() {
+  document.getElementById('navDropdown').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-sections')) {
+    var d = document.getElementById('navDropdown');
+    if (d) d.classList.remove('open');
+  }
+});
+(function() {
+  var path = window.location.pathname;
+  document.querySelectorAll('.nav-dropdown a[data-page]').forEach(function(a) {
+    if (path.indexOf(a.getAttribute('data-page')) !== -1) {
+      a.classList.add('active');
+    }
+  });
+})();
+</script>
+</body>
+</html>

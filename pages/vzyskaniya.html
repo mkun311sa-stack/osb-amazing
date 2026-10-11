@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Меры дисциплинарного взыскания — Методичка ОСБ</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="../index.html">ОСБ — Методическое пособие</a>
+  <div class="nav-sections">
+    <button class="nav-dropdown-btn" onclick="toggleNavDropdown()">Разделы ▾</button>
+    <div class="nav-dropdown" id="navDropdown">
+      <a href="../pages/polnomochiya.html" data-page="polnomochiya">⚖️ Полномочия ОСБ</a>
+      <a href="../pages/proverki.html" data-page="proverki">🔍 Проверки</a>
+      <a href="../pages/raporty.html" data-page="raporty">📝 Написание рапортов</a>
+      <a href="../pages/opros.html" data-page="opros">🗣️ Опрос</a>
+      <a href="../pages/nadzor.html" data-page="nadzor">🛡️ Надзорная деятельность</a>
+      <a href="../pages/vzyskaniya.html" data-page="vzyskaniya">📋 Меры взыскания</a>
+      <a href="../pages/dejstviya.html" data-page="dejstviya">🚨 Действия при нарушении</a>
+      <a href="../pages/vyyavlenie-vnedrennyh.html" data-page="vyyavlenie-vnedrennyh">🕵️ Выявление внедрённых сотрудников</a>
+      <a href="../pages/normativy.html" data-page="normativy">📜 Нормативные документы</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="page-header">
+    <nav class="breadcrumb">
+      <a href="../index.html">← На главную</a>
+      <span class="sep">/</span>
+      <span class="current">Меры дисциплинарного взыскания</span>
+    </nav>
+    <h1>Меры дисциплинарного взыскания</h1>
+  </div>
+
+  <!-- ПРИНЦИПЫ -->
+  <div class="factors-box">
+    <strong>Принципы назначения мер</strong>
+    <p>При выборе меры взыскания необходимо руководствоваться принципами <strong>гуманизма и лояльности</strong>. Конкретная мера определяется с учётом:</p>
+    <ul>
+      <li><strong>Тяжести нарушения</strong> — степень ущерба, причинённого службе, гражданам или репутации органа;</li>
+      <li><strong>Рецидива</strong> — повторное нарушение влечёт более строгую меру;</li>
+      <li><strong>Опыта и стажа сотрудника</strong> — к опытному сотруднику применяется более строгое взыскание, чем к новому, впервые допустившему нарушение.</li>
+    </ul>
+  </div>
+
+  <!-- МЕРЫ ВОЗДЕЙСТВИЯ -->
+  <h2 class="section-label">Меры дисциплинарного воздействия</h2>
+  <p class="section-desc">Применяются при незначительных нарушениях и в целях профилактики. Не являются взысканием.</p>
+
+  <div class="steps">
+
+    <div class="step green">
+      <div class="step-icon">💬</div>
+      <div class="step-body">
+        <strong>Разъяснительная или профилактическая беседа</strong>
+        <p>Проводится с целью предупреждения нарушений, разъяснения требований устава и законодательства.</p>
+      </div>
+    </div>
+
+    <div class="step green">
+      <div class="step-icon">🏅</div>
+      <div class="step-body">
+        <strong>Лишение поощрения</strong>
+        <p>Отмена ранее представленного или запланированного поощрения — премии, грамоты, благодарности.</p>
+      </div>
+    </div>
+
+    <div class="step green">
+      <div class="step-icon">📋</div>
+      <div class="step-body">
+        <strong>Переаттестация</strong>
+        <p>Внеплановая проверка соответствия сотрудника занимаемой должности и уровню профессиональной подготовки.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ДИСЦИПЛИНАРНЫЕ ВЗЫСКАНИЯ -->
+  <hr class="section-sep">
+
+  <h2 class="section-label">Дисциплинарные взыскания</h2>
+  <p class="section-desc">Применяются за конкретные нарушения. Степень строгости нарастает снизу вверх.</p>
+
+  <div class="severity-bar">
+    <span>Мягче</span>
+    <span style="background:#d29922;"></span>
+    <span style="background:#e06c1a;"></span>
+    <span style="background:#f85149;"></span>
+    <span style="background:#ff4040;"></span>
+    <span>Строже</span>
+  </div>
+
+  <div class="steps">
+
+    <div class="step yellow">
+      <div class="step-icon">📌</div>
+      <div class="step-body">
+        <strong>Замечание</strong>
+        <p>Наименее строгая форма взыскания. Выносится устно или письменно при незначительных нарушениях.</p>
+      </div>
+    </div>
+
+    <div class="step yellow">
+      <div class="step-icon">📄</div>
+      <div class="step-body">
+        <strong>Выговор без занесения в личное дело</strong>
+        <p>Устный или письменный выговор. Не отражается в личном деле сотрудника.</p>
+      </div>
+    </div>
+
+    <div class="step orange">
+      <div class="step-icon">📂</div>
+      <div class="step-body">
+        <strong>Выговор с занесением в личное дело</strong>
+        <p>Строгий или письменный выговор. Фиксируется в личном деле и учитывается при последующих нарушениях.</p>
+      </div>
+    </div>
+
+    <div class="step orange">
+      <div class="step-icon">🔽</div>
+      <div class="step-body">
+        <strong>Понижение в звании или должности</strong>
+        <p>Применяется при систематических нарушениях или серьёзном единичном проступке.</p>
+      </div>
+    </div>
+
+    <div class="step red">
+      <div class="step-icon">🚫</div>
+      <div class="step-body">
+        <strong>Отстранение от занимаемой должности</strong>
+        <p>Временное или постоянное отстранение от исполнения служебных обязанностей.</p>
+      </div>
+    </div>
+
+    <div class="step red">
+      <div class="step-icon">🚪</div>
+      <div class="step-body">
+        <strong>Увольнение</strong>
+        <p>Расторжение контракта и увольнение из органов внутренних дел.</p>
+      </div>
+    </div>
+
+    <div class="step darkred">
+      <div class="step-icon">⛔</div>
+      <div class="step-body">
+        <strong>Увольнение с занесением в чёрный список</strong>
+        <p>Высшая мера. Применяется за грубые или умышленные нарушения. Исключает возможность повторного трудоустройства в органы внутренних дел.</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>Методическое пособие ОСБ. Автор: Vladislav_Shetkov &nbsp;|&nbsp; Одобрил: Danila_Leonov</p>
+</footer>
+
+
+<script>
+function toggleNavDropdown() {
+  document.getElementById('navDropdown').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-sections')) {
+    var d = document.getElementById('navDropdown');
+    if (d) d.classList.remove('open');
+  }
+});
+(function() {
+  var path = window.location.pathname;
+  document.querySelectorAll('.nav-dropdown a[data-page]').forEach(function(a) {
+    if (path.indexOf(a.getAttribute('data-page')) !== -1) {
+      a.classList.add('active');
+    }
+  });
+})();
+</script>
+</body>
+</html>
